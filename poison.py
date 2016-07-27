@@ -165,10 +165,9 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    # parser.add_argument('target', help='Target IP')
-    # parser.add_argument('domain', help='Poisoning domain')
-    # parser.add_argument('ip', help='Poisoning IP')
+    parser.add_argument('target', help='Target IP')
+    parser.add_argument('domain', help='Poisoning domain')
+    parser.add_argument('ip', help='Poisoning IP')
     args = parser.parse_args()
 
-    print(QueryPacket('vk.com.').packed)
-    # main(args)
+    main(args)
